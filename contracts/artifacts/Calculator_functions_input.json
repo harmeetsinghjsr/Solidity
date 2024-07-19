@@ -1,0 +1,43 @@
+[
+  {
+    "name": "add",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "num",
+        "type": "uint256",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "name": "get",
+    "stateMutability": "view",
+    "inputs": []
+  },
+  {
+    "name": "multiply",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "num",
+        "type": "uint256",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "name": "subtract",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "num",
+        "type": "uint256",
+        "value": ""
+      }
+    ]
+  }
+]
