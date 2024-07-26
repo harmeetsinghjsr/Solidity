@@ -12,4 +12,8 @@ contract Twitter{
     function getTweet(address _owner, unit _i) public view returns (string memory) {
         return tweets[_owner][_i];
     }
+
+    function getAllTweets(address _owner) public view returns (string[] memory){
+        return tweets[_owner];
+    }
 }
