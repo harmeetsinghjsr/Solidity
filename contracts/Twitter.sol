@@ -3,6 +3,12 @@
 pragma solidity ^0.8.26;
 
 contract Twitter{
+
+    struct Tweet{
+        address author;
+        string content;
+    }
+
     mapping(address => string[]) public tweets;
 
     function createTweet(string memory _tweet) public {
