@@ -22,4 +22,5 @@ contract Twitter{
     function getAllTweets(address _owner) public view returns (string[] memory){
         return tweets[_owner];
     }
+    
 }
