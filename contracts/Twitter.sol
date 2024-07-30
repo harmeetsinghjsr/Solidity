@@ -7,6 +7,7 @@ contract Twitter{
     struct Tweet{
         address author;
         string content;
+        uint256 timestamp;
     }
 
     mapping(address => string[]) public tweets;
