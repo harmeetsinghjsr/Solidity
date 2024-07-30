@@ -8,6 +8,7 @@ contract Twitter{
         address author;
         string content;
         uint256 timestamp;
+        uint likes;
     }
 
     mapping(address => string[]) public tweets;
