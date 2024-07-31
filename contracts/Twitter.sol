@@ -11,9 +11,16 @@ contract Twitter{
         uint likes;
     }
 
-    mapping(address => string[]) public tweets;
+    mapping(address => Tweet[]) public tweets;
 
     function createTweet(string memory _tweet) public {
+        Tweet memory newTweet=Tweet({
+            author: msg.sender,
+            content: _tweet,
+            timestamp: block.timestamp,
+            likes: 0
+
+        });
         tweets[msg.sender].push(_tweet);
     }
 
