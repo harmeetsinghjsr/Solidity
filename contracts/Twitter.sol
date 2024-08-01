@@ -21,7 +21,7 @@ contract Twitter{
             likes: 0
 
         });
-        tweets[msg.sender].push(_tweet);
+        tweets[msg.sender].push(newTweet);
     }
 
     function getTweet(address _owner, uint _i) public view returns (string memory) {
