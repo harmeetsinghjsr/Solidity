@@ -24,11 +24,11 @@ contract Twitter{
         tweets[msg.sender].push(newTweet);
     }
 
-    function getTweet(address _owner, uint _i) public view returns (string memory) {
+    function getTweet(address _owner, uint _i) public view returns (Tweet memory) {
         return tweets[_owner][_i];
     }
 
-    function getAllTweets(address _owner) public view returns (string[] memory){
+    function getAllTweets(address _owner) public view returns (Tweet[] memory){
         return tweets[_owner];
     }
 
