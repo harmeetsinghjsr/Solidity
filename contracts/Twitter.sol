@@ -11,6 +11,7 @@ contract Twitter{
         uint256 timestamp;
         uint likes;
         uint reach;
+        uint comments;
     }
 
     mapping(address => Tweet[]) public tweets;
@@ -23,8 +24,8 @@ contract Twitter{
             content: _tweet,
             timestamp: block.timestamp,
             likes: 0,
-            reach: 0
-
+            reach: 0,
+            comments: 0
         });
 
         tweets[msg.sender].push(newTweet);
