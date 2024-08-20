@@ -1,0 +1,62 @@
+[
+  {
+    "name": "createTweet",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_tweet",
+        "type": "string",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "name": "getAllTweets",
+    "stateMutability": "view",
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "name": "getTweet",
+    "stateMutability": "view",
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address",
+        "value": ""
+      },
+      {
+        "internalType": "uint256",
+        "name": "_i",
+        "type": "uint256",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "name": "tweets",
+    "stateMutability": "view",
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address",
+        "value": ""
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256",
+        "value": ""
+      }
+    ]
+  }
+]
