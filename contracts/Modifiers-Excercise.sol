@@ -16,6 +16,7 @@ contract PausableToken {
     modifier onlyOwner() {
         require(msg.sender == owner, "YOU ARE NOT THE OWNER");
         _;
+        //continue execution
     }
 
     modifier notPaused() {
@@ -31,6 +32,7 @@ contract PausableToken {
     }
 
     function transfer(address to,uint amount) public notPaused{
+
         require(balances[msg.sender] >= amount, "INSUFFICIENT BALANCE");
 
         balances[msg.sender] -= amount;
